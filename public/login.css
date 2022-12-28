@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: blue;
+}
+.login_section{
+    margin:300px auto; 
+}

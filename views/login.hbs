@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/login.css">
+</head>
+
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .login_section{
+            text-align: center;
+            margin: 100px auto;
+            border: solid;
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            border-radius: 20px;
+        }
+        .login_parts{
+            margin-top: 20px;
+        }
+        .login_parts:last-child{
+            margin-bottom: 30px;
+        }
+        #input,#submit{
+            border: gray;
+            transition: all .15s ease-out;
+            outline:1px solid gray ;
+            border-radius: 10px;
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+            border: solid;
+            cursor: pointer;
+        }
+        #submit{
+            background-color: white;
+
+        }
+        #input:hover,#submit:hover{
+            box-shadow: 0px 0px 3px 3px rgb(79, 79, 79);
+            background-color: aliceblue;
+
+        }
+        .sign_up:hover{
+            text-shadow: 0px 0px 3px 3px blue;
+        }
+
+        .signup{
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <div style="background-color: yellow;" class="login_section">
+        <h1>Login Page</h1>
+    <form action="/login" method="post">
+    <div class="login_parts">
+    <input type="text" name="name" id="input" placeholder="name">
+    </div>
+    <div class="login_parts">
+    <input type="password" id="input" name="password" placeholder="password">
+    </div>
+    <div class="login_parts">
+    <input type="submit" id="submit">
+    </div>
+    </form>
+    <div class="signup">
+    <a class="sign_up" href="/signup">sign up</a>
+    </div>
+    </div>
+    
+</body>
+</html>
